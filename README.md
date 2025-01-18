@@ -1,8 +1,8 @@
-**Shiina-Web:**
-The new version of shiina for **bancho.py**
+**RhythmForge-Web:**
+The web frontend of RhythmForge based on Shiina for **bancho.py-ex**
 
 ### **Requirements**
-> ⚠️ Your bancho server needs to be [bancho.py-ex](https://github.com/osu-NoLimits/bancho.py-ex) at the moment. Everything else will break
+> ⚠️ Your bancho server needs to be [RhythmForge](https://github.com/RhythmForge/RhythmForge) at the moment. Everything else will break
 
 ### **Installation:**
 1. `make install` - will install and compile the project
@@ -21,6 +21,7 @@ The new version of shiina for **bancho.py**
 - ✅ Authorization
 - ✅ Beatmap Search page
 - ✅ Profile picture change
+- ❌ Profile Banner change
 - ✅ Theming
 - ✅ Admin Panel (expandable)
 - ✅ Userpage w/ edit
@@ -30,19 +31,9 @@ The new version of shiina for **bancho.py**
 - ❌ Beatmap Request
 - ❌ Sitemap Generation
 
-### **Trusted by:**
-<img width="25" src="https://osu-server-list.com/res/servers/osuNoLimits.webp"></img> osuNoLimits - [osunolimits.dev](https://osunolimits.dev)
-
-<img width="25" src="https://osu-server-list.com/res/servers/4ayo.webp"></img> 4ayo - [4ayo.ovh](https://4ayo.ovh)
-
-<img width="25" src="https://osu-server-list.com/res/servers/Miausu.webp"></img> Miausu - [miausu.pw](https://miausu.pw)
 
 ### **Technical:**
 
 - ✅ API Request Caching
 - ✅ Error/Request Logger with configuration at `.config/logger.env`
 - ✅ Easy customization with `.config/customization.yml`
-
-
-![Structure](/static/img/shiina-structure.png)
-_Structure has changed this is outdated_
