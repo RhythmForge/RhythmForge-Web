@@ -4,7 +4,7 @@ install:
 	mvn clean install
 
 build:
-	mvn compilee exec:java -Dexec.mainClass="dev.osunolimits.main.App"
+	mvn compile exec:java -Dexec.mainClass="dev.osunolimits.main.App"
 
 run:
 	mvn exec:java -Dexec.mainClass="dev.osunolimits.main.App"
