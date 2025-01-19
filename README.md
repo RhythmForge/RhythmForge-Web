@@ -21,7 +21,7 @@ The web frontend of RhythmForge based on Shiina for **bancho.py-ex**
 - ✅ Authorization
 - ✅ Beatmap Search page
 - ✅ Profile picture change
-- ❌ Profile Banner change
+- ✅ Profile Banner change
 - ✅ Theming
 - ✅ Admin Panel (expandable)
 - ✅ Userpage w/ edit
