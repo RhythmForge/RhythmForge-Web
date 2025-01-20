@@ -1,9 +1,8 @@
-CREATE TABLE `userpages` (
+CREATE TABLE `userpages` IF NOT EXISTS (
   `id` int NOT NULL,
   `user_id` int NOT NULL,
   `html` text,
-  `raw` text,
-  `raw_type` enum('tiptap') DEFAULT NULL
+  `raw` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 ALTER TABLE `userpages`

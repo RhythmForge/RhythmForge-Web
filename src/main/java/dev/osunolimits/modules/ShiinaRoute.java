@@ -62,6 +62,7 @@ public class ShiinaRoute {
         request.data.put("c", App.customization);
         request.data.put("turnstilePublic", App.env.get("TURNSTILE_KEY"));
         request.data.put("avatarServer", App.env.get("AVATARSRV"));
+        request.data.put("bannerServer", App.env.get("BANNERSRV"));
         request.data.put("loggedIn", request.loggedIn);
         return request;
     }

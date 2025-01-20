@@ -35,6 +35,24 @@
                 </div>
             </div>
 
+            <div class="shiina-pill mb-2 px-2 d-flex align-items-center"></div>
+                <div class="shiina-pill-icon"></div>
+                <span>Profile Banner</span>
+            </div>
+            <div class="row px-2 pb-2">
+                <div class="col col-2 col-sm-1">
+                    <img src="${bannerServer}/${user.id?c}" class="w-100" alt="Avatar">
+                </div>
+                <div class="col col-auto">
+                    <form id="banner-upload-form" action="/settings/banner" method="post" enctype="multipart/form-data" class="w-100" onsubmit="return handleBannerUpload(event)">
+                        <div class="form-group">
+                            <input type="file" name="banner" id="banner" accept=".png" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-2">Upload</button>
+                    </form>
+                </div>
+            </div>
+
             <div class="shiina-pill px-2 mt-2 d-flex align-items-center">
                 <div class="shiina-pill-icon"></div>
                 <span>Userpage</span>

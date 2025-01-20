@@ -56,6 +56,7 @@ import dev.osunolimits.routes.get.simple.Register;
 import dev.osunolimits.routes.get.user.Relations;
 import dev.osunolimits.routes.get.user.Settings;
 import dev.osunolimits.routes.post.HandleAvatarChange;
+import dev.osunolimits.routes.post.HandleBannerChange;
 import dev.osunolimits.routes.post.HandleDonate;
 import dev.osunolimits.routes.post.HandleFlagChange;
 import dev.osunolimits.routes.post.HandleLogin;
@@ -88,7 +89,7 @@ public class App {
     public static void main(String[] args) throws SQLException {
         env = Dotenv.configure().directory(".config/").load();
         loggerEnv = Dotenv.configure().directory(".config/").filename("logger.env").load();
-        log.info("Shiina-Web Rewrite "+version);
+        log.info("RhythmForge-Web built on Shiina-Web Rewrite "+version);
         Init init = new Init();
         init.initializeDataDirectory();
         init.initializeRedisConfiguration();
@@ -122,6 +123,7 @@ public class App {
         WebServer.get("/settings", new Settings());
         WebServer.get("/friends", new Relations());
         WebServer.post("/settings/avatar", new HandleAvatarChange());
+        WebServer.post("/settings/banner", new HandleBannerChange());
         WebServer.post("/settings/country", new HandleFlagChange());
         WebServer.post("/settings/name", new HandleNameChange());
         WebServer.post("/settings/userpage", new HandleUserpageChange());

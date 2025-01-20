@@ -1,22 +1,6 @@
 <#include "assets/base.html">
 <div class="container">
-    <!-- Mode Selector Card -->
-    <div class="card shiina-user-card">
-        <div class="row m-2 m-lg-0 justify-content-center justify-content-lg-start">
-            <#include "/freemarker/selector.ftl">
-            <div class="my-2 col-12 col-md-auto my-lg-0 col-auto d-flex align-items-center justify-content-center">
-                <div class="btn-group flex-wrap" role="group" aria-label="Mixed example">
-                    <button type="button"
-                        onclick="selectParam('mode', '<#if (mode == 0 || mode == 1 || mode == 2 || mode == 8)>${convertModeToRelax(mode)}</#if>')"
-                        class="btn btn-<#if (mode == 4 || mode == 5 || mode == 6)>primary<#else>secondary</#if>"
-                        <#if (mode==3)>disabled</#if>>Relax</button>
-                    <button type="button" onclick="selectParam('mode', '8')"
-                        class="btn btn-<#if mode == 8>primary<#else>secondary</#if>" <#if (mode !=0 && mode !=4
-                        && mode !=8)>disabled</#if>>AutoPilot</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
     <#if restricted && !self>
     <div class="alert alert-danger mt-4" role="alert">
@@ -28,10 +12,10 @@
         You are in restricted mode and not present in our ranking. Visit our <a href="${c.discordUrl}">Discord</a> for further information.
     </div>
     </#if>
-
+    
     <!-- Profile Section -->
     <div class="card my-4 shiina-user-card">
-        <div class="bg-secondary rounded-top">
+        <div class="bg-secondary rounded-top" style="background-image: url(${bannerServer}/${u.player.info.id?c});">
             <div class="row p-4">
                 <!-- Profile Picture -->
                 <div class="col-12 col-md-3 d-flex justify-content-center align-items-center">
@@ -67,7 +51,25 @@
                 </div>
             </div>
         </div>
- 
+
+        <!-- Mode Selector Card -->
+        <div class="bg-banner">
+            <div class="row m-2 m-lg-0 justify-content-center">
+                <#include "/freemarker/selector.ftl">
+                <div class="my-2 col-12 col-md-auto my-lg-0 col-auto d-flex align-items-center justify-content-center">
+                    <div class="btn-group flex-wrap" role="group" aria-label="Mixed example">
+                        <button type="button"
+                            onclick="selectParam('mode', '<#if (mode == 0 || mode == 1 || mode == 2 || mode == 8)>${convertModeToRelax(mode)}</#if>')"
+                            class="btn btn-<#if (mode == 4 || mode == 5 || mode == 6)>primary<#else>secondary</#if>"
+                            <#if (mode==3)>disabled</#if>>Relax</button>
+                        <button type="button" onclick="selectParam('mode', '8')"
+                            class="btn btn-<#if mode == 8>primary<#else>secondary</#if>" <#if (mode !=0 && mode !=4
+                            && mode !=8)>disabled</#if>>AutoPilot</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="m-1 mb-4">
             <div class="shiina-pill mx-1 mb-4 my-2 mx-md-4 d-flex align-items-center">
                 <div class="shiina-pill-icon"></div>
