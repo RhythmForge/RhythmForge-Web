@@ -46,6 +46,7 @@ import dev.osunolimits.routes.get.Clan;
 import dev.osunolimits.routes.get.Clans;
 import dev.osunolimits.routes.get.Home;
 import dev.osunolimits.routes.get.Leaderboard;
+import dev.osunolimits.routes.get.MMLeaderboard;
 import dev.osunolimits.routes.get.User;
 import dev.osunolimits.routes.get.UserScore;
 import dev.osunolimits.routes.get.errors.NotFound;
@@ -115,6 +116,7 @@ public class App {
         WebServer.get("/", new Home());
         WebServer.get("/beatmaps", new Beatmaps());
         WebServer.get("/leaderboard", new Leaderboard());
+        WebServer.get("/mmleaderboard", new MMLeaderboard());
         WebServer.get("/clans", new Clans());
         WebServer.get("/clan/:id", new Clan());
         WebServer.get("/scores/:id", new UserScore());

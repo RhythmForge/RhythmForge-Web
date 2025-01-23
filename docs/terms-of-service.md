@@ -13,12 +13,12 @@ BEHINDLOGIN=false
 
 
 ##### 1. Introduction  
-Welcome to osunolimits.dev, an osu! private server operated by Marc Andre Herpers ("we," "our," or "us"). By using our website and services, you agree to these Terms of Service ("Terms"). If you do not agree, please discontinue use of our services.
+Welcome to RhythmForge(gaize.dev), an osu! private server operated by Gaize & Snabbis ("we," "our," or "us"). By using our website and services, you agree to these Terms of Service ("Terms"). If you do not agree, please discontinue use of our services.
 
 ---
 
 ##### 2. Services  
-osunolimits.dev provides a private osu! game server and related features. Services include account creation, game statistics tracking, and leaderboard management.
+RhythmForge(gaize.dev) provides a private osu! game server and related features. Services include account creation, game statistics tracking, and leaderboard management.
 
 ---
 
@@ -36,7 +36,7 @@ We process this data in compliance with applicable data protection laws.
 ##### 4. Account Deletion Requests  
 If you wish to delete your account and remove your personal data from our servers, send a deletion request to:  
 
-**Email:** inbox@osunolimits.dev  
+**Email:** tim@timcraft.se  
 
 Please include your registered username and email address for verification purposes. Account deletions are irreversible.
 
@@ -61,7 +61,7 @@ Payments for premium features are processed through Stripe Checkout. You will be
 ##### 7. Privacy and Data Protection  
 We are committed to protecting your personal data. Our Data Protection Officer is:  
 
-**Marc Andre Herpers**  
+**Gaize**  
 
 For data protection inquiries, please contact us through the official support channels listed on our website.
 
@@ -92,11 +92,11 @@ We may update these Terms from time to time. Significant changes will be announc
 ---
 
 ##### 12. Contact Information  
-For any questions about these Terms, please contact us through the official support channels listed on osunolimits.dev.
+For any questions about these Terms, please contact us through the official support channels listed on RhythmForge(gaize.dev).
 
 ---
 
-_Last updated: 08.12.2024_  
+_Last updated: 20.01.2025_  
 
 
 * * *

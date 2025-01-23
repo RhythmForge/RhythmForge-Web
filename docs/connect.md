@@ -2,7 +2,7 @@
 ICON=fa-solid fa-server
 ROUTE=connect
 SHORT=Connect
-TITLE=Connect to osuNoLimits
+TITLE=Connect to RhythmForge
 NAVBAR=true
 FOOTER=false
 BEHINDLOGIN=false
@@ -15,6 +15,6 @@ BEHINDLOGIN=false
 2. Right-Click it
 3. Select propeties
 
-Enter for target after the path for osu! ` -devserver osunolimits.dev`
+Enter for target after the path for osu! ` -devserver gaize.dev`
 
 * * *

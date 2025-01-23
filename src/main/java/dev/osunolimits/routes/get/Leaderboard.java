@@ -52,10 +52,10 @@ public class Leaderboard extends Shiina {
             sort = req.queryParams("sort");
         }
 
-        String sort = "elo";
-        if (req.queryParams("sort") != null) {
-            sort = req.queryParams("sort");
-        }
+//        sort = "elo";
+//        if (req.queryParams("sort") != null) {
+//            sort = req.queryParams("sort");
+//        }
 
         LeaderboardResponse leaderboardResponse = leaderboardQuery.getLeaderboard(sort, mode, 50, offset, country);
 
